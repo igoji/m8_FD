@@ -96,9 +96,9 @@ const run = async() =>{
 
 // • Eliminar un usuario por id; por ejemplo: el usuario con id=1.
 
-    const query6 = await userController.deleteUserById(user1.id)
-    const usuarioEliminado = await userController.findUserById(user1.id)
-    console.log("Usuario eliminado: ", JSON.stringify(usuarioEliminado,null,2));
+    // const query6 = await userController.deleteUserById(user1.id)
+    // const usuarioEliminado = await userController.findUserById(user1.id)
+    // console.log("Usuario eliminado: ", JSON.stringify(usuarioEliminado,null,2));
 
 }
 
