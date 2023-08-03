@@ -34,6 +34,16 @@ module.exports = (sequelize, DataTypes) => {
             args: true,
             msg: 'El correo ingresado ya se encuentra registrado en la base de datos'
         }
+      },
+      password: {
+        type: DataTypes.STRING,
+        validate:{
+          notEmpty: {
+            args: true,
+            msg: 'El campo no puede estar vacío'
+          },
+          min: 8
+        }
       }
     });
   
